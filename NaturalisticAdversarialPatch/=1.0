@@ -1,0 +1,361 @@
+Requirement already satisfied: numpy in /home/dos/PycharmProjects/PersonRecognitionSecurity/.venv/lib/python3.8/site-packages (1.24.4)
+Collecting torch
+  Obtaining dependency information for torch from https://files.pythonhosted.org/packages/a9/71/45aac46b75742e08d2d6f9fc2b612223b5e36115b8b2ed673b23c21b5387/torch-2.4.1-cp38-cp38-manylinux1_x86_64.whl.metadata
+  Using cached torch-2.4.1-cp38-cp38-manylinux1_x86_64.whl.metadata (26 kB)
+Collecting torchvision
+  Obtaining dependency information for torchvision from https://files.pythonhosted.org/packages/ed/15/74800e103ea652bef9fc572661b74a081e2194700f0f5f4f184918218af6/torchvision-0.19.1-cp38-cp38-manylinux1_x86_64.whl.metadata
+  Using cached torchvision-0.19.1-cp38-cp38-manylinux1_x86_64.whl.metadata (6.0 kB)
+Collecting matplotlib
+  Obtaining dependency information for matplotlib from https://files.pythonhosted.org/packages/30/33/cc27211d2ffeee4fd7402dca137b6e8a83f6dcae3d4be8d0ad5068555561/matplotlib-3.7.5-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata
+  Using cached matplotlib-3.7.5-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (5.7 kB)
+Collecting tensorflow
+  Obtaining dependency information for tensorflow from https://files.pythonhosted.org/packages/c2/20/b15abac0be474f12cf51a104c9dd935b053081b502c103e9e947e8be7b84/tensorflow-2.13.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading tensorflow-2.13.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.4 kB)
+Collecting tensorboard
+  Obtaining dependency information for tensorboard from https://files.pythonhosted.org/packages/bc/a2/ff5f4c299eb37c95299a76015da3f30211468e29d8d6f1d011683279baee/tensorboard-2.14.0-py3-none-any.whl.metadata
+  Using cached tensorboard-2.14.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting terminaltables
+  Obtaining dependency information for terminaltables from https://files.pythonhosted.org/packages/c4/fb/ea621e0a19733e01fe4005d46087d383693c0f4a8f824b47d8d4122c87e0/terminaltables-3.1.10-py2.py3-none-any.whl.metadata
+  Downloading terminaltables-3.1.10-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting pillow
+  Obtaining dependency information for pillow from https://files.pythonhosted.org/packages/fb/ad/435fe29865f98a8fbdc64add8875a6e4f8c97749a93577a8919ec6f32c64/pillow-10.4.0-cp38-cp38-manylinux_2_28_x86_64.whl.metadata
+  Using cached pillow-10.4.0-cp38-cp38-manylinux_2_28_x86_64.whl.metadata (9.2 kB)
+Collecting tqdm
+  Obtaining dependency information for tqdm from https://files.pythonhosted.org/packages/d0/30/dc54f88dd4a2b5dc8a0279bdd7270e735851848b762aeb1c1184ed1f6b14/tqdm-4.67.1-py3-none-any.whl.metadata
+  Using cached tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+Collecting filelock (from torch)
+  Obtaining dependency information for filelock from https://files.pythonhosted.org/packages/b9/f8/feced7779d755758a52d1f6635d990b8d98dc0a29fa568bbe0625f18fdf3/filelock-3.16.1-py3-none-any.whl.metadata
+  Using cached filelock-3.16.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting typing-extensions>=4.8.0 (from torch)
+  Obtaining dependency information for typing-extensions>=4.8.0 from https://files.pythonhosted.org/packages/26/9f/ad63fc0248c5379346306f8668cda6e2e2e9c95e01216d2b8ffd9ff037d0/typing_extensions-4.12.2-py3-none-any.whl.metadata
+  Using cached typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting sympy (from torch)
+  Obtaining dependency information for sympy from https://files.pythonhosted.org/packages/99/ff/c87e0622b1dadea79d2fb0b25ade9ed98954c9033722eb707053d310d4f3/sympy-1.13.3-py3-none-any.whl.metadata
+  Using cached sympy-1.13.3-py3-none-any.whl.metadata (12 kB)
+Collecting networkx (from torch)
+  Obtaining dependency information for networkx from https://files.pythonhosted.org/packages/a8/05/9d4f9b78ead6b2661d6e8ea772e111fc4a9fbd866ad0c81906c11206b55e/networkx-3.1-py3-none-any.whl.metadata
+  Using cached networkx-3.1-py3-none-any.whl.metadata (5.3 kB)
+Collecting jinja2 (from torch)
+  Obtaining dependency information for jinja2 from https://files.pythonhosted.org/packages/bd/0f/2ba5fbcd631e3e88689309dbe978c5769e883e4b84ebfe7da30b43275c5a/jinja2-3.1.5-py3-none-any.whl.metadata
+  Using cached jinja2-3.1.5-py3-none-any.whl.metadata (2.6 kB)
+Collecting fsspec (from torch)
+  Obtaining dependency information for fsspec from https://files.pythonhosted.org/packages/de/86/5486b0188d08aa643e127774a99bac51ffa6cf343e3deb0583956dca5b22/fsspec-2024.12.0-py3-none-any.whl.metadata
+  Using cached fsspec-2024.12.0-py3-none-any.whl.metadata (11 kB)
+Collecting nvidia-cuda-nvrtc-cu12==12.1.105 (from torch)
+  Obtaining dependency information for nvidia-cuda-nvrtc-cu12==12.1.105 from https://files.pythonhosted.org/packages/b6/9f/c64c03f49d6fbc56196664d05dba14e3a561038a81a638eeb47f4d4cfd48/nvidia_cuda_nvrtc_cu12-12.1.105-py3-none-manylinux1_x86_64.whl.metadata
+  Using cached nvidia_cuda_nvrtc_cu12-12.1.105-py3-none-manylinux1_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cuda-runtime-cu12==12.1.105 (from torch)
+  Obtaining dependency information for nvidia-cuda-runtime-cu12==12.1.105 from https://files.pythonhosted.org/packages/eb/d5/c68b1d2cdfcc59e72e8a5949a37ddb22ae6cade80cd4a57a84d4c8b55472/nvidia_cuda_runtime_cu12-12.1.105-py3-none-manylinux1_x86_64.whl.metadata
+  Using cached nvidia_cuda_runtime_cu12-12.1.105-py3-none-manylinux1_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cuda-cupti-cu12==12.1.105 (from torch)
+  Obtaining dependency information for nvidia-cuda-cupti-cu12==12.1.105 from https://files.pythonhosted.org/packages/7e/00/6b218edd739ecfc60524e585ba8e6b00554dd908de2c9c66c1af3e44e18d/nvidia_cuda_cupti_cu12-12.1.105-py3-none-manylinux1_x86_64.whl.metadata
+  Using cached nvidia_cuda_cupti_cu12-12.1.105-py3-none-manylinux1_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-cudnn-cu12==9.1.0.70 (from torch)
+  Obtaining dependency information for nvidia-cudnn-cu12==9.1.0.70 from https://files.pythonhosted.org/packages/9f/fd/713452cd72343f682b1c7b9321e23829f00b842ceaedcda96e742ea0b0b3/nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl.metadata
+  Using cached nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-cublas-cu12==12.1.3.1 (from torch)
+  Obtaining dependency information for nvidia-cublas-cu12==12.1.3.1 from https://files.pythonhosted.org/packages/37/6d/121efd7382d5b0284239f4ab1fc1590d86d34ed4a4a2fdb13b30ca8e5740/nvidia_cublas_cu12-12.1.3.1-py3-none-manylinux1_x86_64.whl.metadata
+  Using cached nvidia_cublas_cu12-12.1.3.1-py3-none-manylinux1_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cufft-cu12==11.0.2.54 (from torch)
+  Obtaining dependency information for nvidia-cufft-cu12==11.0.2.54 from https://files.pythonhosted.org/packages/86/94/eb540db023ce1d162e7bea9f8f5aa781d57c65aed513c33ee9a5123ead4d/nvidia_cufft_cu12-11.0.2.54-py3-none-manylinux1_x86_64.whl.metadata
+  Using cached nvidia_cufft_cu12-11.0.2.54-py3-none-manylinux1_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-curand-cu12==10.3.2.106 (from torch)
+  Obtaining dependency information for nvidia-curand-cu12==10.3.2.106 from https://files.pythonhosted.org/packages/44/31/4890b1c9abc496303412947fc7dcea3d14861720642b49e8ceed89636705/nvidia_curand_cu12-10.3.2.106-py3-none-manylinux1_x86_64.whl.metadata
+  Using cached nvidia_curand_cu12-10.3.2.106-py3-none-manylinux1_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cusolver-cu12==11.4.5.107 (from torch)
+  Obtaining dependency information for nvidia-cusolver-cu12==11.4.5.107 from https://files.pythonhosted.org/packages/bc/1d/8de1e5c67099015c834315e333911273a8c6aaba78923dd1d1e25fc5f217/nvidia_cusolver_cu12-11.4.5.107-py3-none-manylinux1_x86_64.whl.metadata
+  Using cached nvidia_cusolver_cu12-11.4.5.107-py3-none-manylinux1_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-cusparse-cu12==12.1.0.106 (from torch)
+  Obtaining dependency information for nvidia-cusparse-cu12==12.1.0.106 from https://files.pythonhosted.org/packages/65/5b/cfaeebf25cd9fdec14338ccb16f6b2c4c7fa9163aefcf057d86b9cc248bb/nvidia_cusparse_cu12-12.1.0.106-py3-none-manylinux1_x86_64.whl.metadata
+  Using cached nvidia_cusparse_cu12-12.1.0.106-py3-none-manylinux1_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-nccl-cu12==2.20.5 (from torch)
+  Obtaining dependency information for nvidia-nccl-cu12==2.20.5 from https://files.pythonhosted.org/packages/4b/2a/0a131f572aa09f741c30ccd45a8e56316e8be8dfc7bc19bf0ab7cfef7b19/nvidia_nccl_cu12-2.20.5-py3-none-manylinux2014_x86_64.whl.metadata
+  Using cached nvidia_nccl_cu12-2.20.5-py3-none-manylinux2014_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-nvtx-cu12==12.1.105 (from torch)
+  Obtaining dependency information for nvidia-nvtx-cu12==12.1.105 from https://files.pythonhosted.org/packages/da/d3/8057f0587683ed2fcd4dbfbdfdfa807b9160b809976099d36b8f60d08f03/nvidia_nvtx_cu12-12.1.105-py3-none-manylinux1_x86_64.whl.metadata
+  Using cached nvidia_nvtx_cu12-12.1.105-py3-none-manylinux1_x86_64.whl.metadata (1.7 kB)
+Collecting triton==3.0.0 (from torch)
+  Obtaining dependency information for triton==3.0.0 from https://files.pythonhosted.org/packages/4d/b4/c37e2776a1390bab7e78a6d52bd525441cb3cad7260a6a00b11b0b702e7c/triton-3.0.0-1-cp38-cp38-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata
+  Using cached triton-3.0.0-1-cp38-cp38-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.3 kB)
+Collecting nvidia-nvjitlink-cu12 (from nvidia-cusolver-cu12==11.4.5.107->torch)
+  Obtaining dependency information for nvidia-nvjitlink-cu12 from https://files.pythonhosted.org/packages/03/f8/9d85593582bd99b8d7c65634d2304780aefade049b2b94d96e44084be90b/nvidia_nvjitlink_cu12-12.8.61-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.metadata
+  Downloading nvidia_nvjitlink_cu12-12.8.61-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.metadata (1.7 kB)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Obtaining dependency information for contourpy>=1.0.1 from https://files.pythonhosted.org/packages/8e/71/7f20855592cc929bc206810432b991ec4c702dc26b0567b132e52c85536f/contourpy-1.1.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached contourpy-1.1.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.9 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Obtaining dependency information for cycler>=0.10 from https://files.pythonhosted.org/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl.metadata
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Obtaining dependency information for fonttools>=4.22.0 from https://files.pythonhosted.org/packages/e9/17/d52568dd4790016c2d16d3e5ae0523531eb455c0e61f34087e1871bea186/fonttools-4.55.6-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading fonttools-4.55.6-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (165 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 165.9/165.9 kB 3.6 MB/s eta 0:00:00
+Collecting kiwisolver>=1.0.1 (from matplotlib)
+  Obtaining dependency information for kiwisolver>=1.0.1 from https://files.pythonhosted.org/packages/76/36/ae40d7a3171e06f55ac77fe5536079e7be1d8be2a8210e08975c7f9b4d54/kiwisolver-1.4.7-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.whl.metadata
+  Using cached kiwisolver-1.4.7-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.whl.metadata (6.3 kB)
+Collecting packaging>=20.0 (from matplotlib)
+  Obtaining dependency information for packaging>=20.0 from https://files.pythonhosted.org/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl.metadata
+  Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting pyparsing>=2.3.1 (from matplotlib)
+  Obtaining dependency information for pyparsing>=2.3.1 from https://files.pythonhosted.org/packages/e5/0c/0e3c05b1c87bb6a1c76d281b0f35e78d2d80ac91b5f8f524cebf77f51049/pyparsing-3.1.4-py3-none-any.whl.metadata
+  Using cached pyparsing-3.1.4-py3-none-any.whl.metadata (5.1 kB)
+Collecting python-dateutil>=2.7 (from matplotlib)
+  Obtaining dependency information for python-dateutil>=2.7 from https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting importlib-resources>=3.2.0 (from matplotlib)
+  Obtaining dependency information for importlib-resources>=3.2.0 from https://files.pythonhosted.org/packages/e1/6a/4604f9ae2fa62ef47b9de2fa5ad599589d28c9fd1d335f32759813dfa91e/importlib_resources-6.4.5-py3-none-any.whl.metadata
+  Using cached importlib_resources-6.4.5-py3-none-any.whl.metadata (4.0 kB)
+Collecting absl-py>=1.0.0 (from tensorflow)
+  Obtaining dependency information for absl-py>=1.0.0 from https://files.pythonhosted.org/packages/a2/ad/e0d3c824784ff121c03cc031f944bc7e139a8f1870ffd2845cc2dd76f6c4/absl_py-2.1.0-py3-none-any.whl.metadata
+  Using cached absl_py-2.1.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting astunparse>=1.6.0 (from tensorflow)
+  Obtaining dependency information for astunparse>=1.6.0 from https://files.pythonhosted.org/packages/2b/03/13dde6512ad7b4557eb792fbcf0c653af6076b81e5941d36ec61f7ce6028/astunparse-1.6.3-py2.py3-none-any.whl.metadata
+  Downloading astunparse-1.6.3-py2.py3-none-any.whl.metadata (4.4 kB)
+Collecting flatbuffers>=23.1.21 (from tensorflow)
+  Obtaining dependency information for flatbuffers>=23.1.21 from https://files.pythonhosted.org/packages/0e/e2/b066e6e02d67bf5261a6d7539648c6da3365cc9eff3eb6d82009595d84d9/flatbuffers-25.1.24-py2.py3-none-any.whl.metadata
+  Downloading flatbuffers-25.1.24-py2.py3-none-any.whl.metadata (875 bytes)
+Collecting gast<=0.4.0,>=0.2.1 (from tensorflow)
+  Obtaining dependency information for gast<=0.4.0,>=0.2.1 from https://files.pythonhosted.org/packages/b6/48/583c032b79ae5b3daa02225a675aeb673e58d2cb698e78510feceb11958c/gast-0.4.0-py3-none-any.whl.metadata
+  Downloading gast-0.4.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting google-pasta>=0.1.1 (from tensorflow)
+  Obtaining dependency information for google-pasta>=0.1.1 from https://files.pythonhosted.org/packages/a3/de/c648ef6835192e6e2cc03f40b19eeda4382c49b5bafb43d88b931c4c74ac/google_pasta-0.2.0-py3-none-any.whl.metadata
+  Downloading google_pasta-0.2.0-py3-none-any.whl.metadata (814 bytes)
+Collecting grpcio<2.0,>=1.24.3 (from tensorflow)
+  Obtaining dependency information for grpcio<2.0,>=1.24.3 from https://files.pythonhosted.org/packages/2c/64/66a74c02b00e00b919c245ca9da8e5c44e8692bf3fe7f27efbc97572566c/grpcio-1.70.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading grpcio-1.70.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.9 kB)
+Collecting h5py>=2.9.0 (from tensorflow)
+  Obtaining dependency information for h5py>=2.9.0 from https://files.pythonhosted.org/packages/86/43/fd0bd74462b3c3fb35d98568935d3e5a435c8ec24d45ef408ac8869166af/h5py-3.11.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading h5py-3.11.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.5 kB)
+Collecting keras<2.14,>=2.13.1 (from tensorflow)
+  Obtaining dependency information for keras<2.14,>=2.13.1 from https://files.pythonhosted.org/packages/2e/f3/19da7511b45e80216cbbd9467137b2d28919c58ba1ccb971435cb631e470/keras-2.13.1-py3-none-any.whl.metadata
+  Downloading keras-2.13.1-py3-none-any.whl.metadata (2.4 kB)
+Collecting libclang>=13.0.0 (from tensorflow)
+  Obtaining dependency information for libclang>=13.0.0 from https://files.pythonhosted.org/packages/1d/fc/716c1e62e512ef1c160e7984a73a5fc7df45166f2ff3f254e71c58076f7c/libclang-18.1.1-py2.py3-none-manylinux2010_x86_64.whl.metadata
+  Downloading libclang-18.1.1-py2.py3-none-manylinux2010_x86_64.whl.metadata (5.2 kB)
+Collecting numpy
+  Obtaining dependency information for numpy from https://files.pythonhosted.org/packages/8b/d9/814a619ab84d8eb0d95e08d4c723e665f1e694b5a6068ca505a61bdc3745/numpy-1.24.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading numpy-1.24.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.6 kB)
+Collecting opt-einsum>=2.3.2 (from tensorflow)
+  Obtaining dependency information for opt-einsum>=2.3.2 from https://files.pythonhosted.org/packages/23/cd/066e86230ae37ed0be70aae89aabf03ca8d9f39c8aea0dec8029455b5540/opt_einsum-3.4.0-py3-none-any.whl.metadata
+  Downloading opt_einsum-3.4.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.20.3 (from tensorflow)
+  Obtaining dependency information for protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.20.3 from https://files.pythonhosted.org/packages/d4/f0/6d5c100f6b18d973e86646aa5fc09bc12ee88a28684a56fd95511bceee68/protobuf-4.25.6-cp37-abi3-manylinux2014_x86_64.whl.metadata
+  Downloading protobuf-4.25.6-cp37-abi3-manylinux2014_x86_64.whl.metadata (541 bytes)
+Requirement already satisfied: setuptools in /home/dos/PycharmProjects/PersonRecognitionSecurity/.venv/lib/python3.8/site-packages (from tensorflow) (68.2.0)
+Collecting six>=1.12.0 (from tensorflow)
+  Obtaining dependency information for six>=1.12.0 from https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl.metadata
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting tensorboard
+  Obtaining dependency information for tensorboard from https://files.pythonhosted.org/packages/67/f2/e8be5599634ff063fa2c59b7b51636815909d5140a26df9f02ce5d99b81a/tensorboard-2.13.0-py3-none-any.whl.metadata
+  Downloading tensorboard-2.13.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting tensorflow-estimator<2.14,>=2.13.0 (from tensorflow)
+  Obtaining dependency information for tensorflow-estimator<2.14,>=2.13.0 from https://files.pythonhosted.org/packages/72/5c/c318268d96791c6222ad7df1651bbd1b2409139afeb6f468c0f327177016/tensorflow_estimator-2.13.0-py2.py3-none-any.whl.metadata
+  Downloading tensorflow_estimator-2.13.0-py2.py3-none-any.whl.metadata (1.3 kB)
+Collecting termcolor>=1.1.0 (from tensorflow)
+  Obtaining dependency information for termcolor>=1.1.0 from https://files.pythonhosted.org/packages/d9/5f/8c716e47b3a50cbd7c146f45881e11d9414def768b7cd9c5e6650ec2a80a/termcolor-2.4.0-py3-none-any.whl.metadata
+  Downloading termcolor-2.4.0-py3-none-any.whl.metadata (6.1 kB)
+INFO: pip is looking at multiple versions of tensorflow to determine which version is compatible with other requirements. This could take a while.
+Collecting tensorflow
+  Obtaining dependency information for tensorflow from https://files.pythonhosted.org/packages/88/cc/14affad82a28640974ff2a37c177269a0a088266104ddf76a01eac21c9ac/tensorflow-2.13.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading tensorflow-2.13.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.4 kB)
+  Obtaining dependency information for tensorflow from https://files.pythonhosted.org/packages/41/58/37cbe746dabc5723969636d2f4a8e41ac11b45c19b8d32b58bfb8ef8de98/tensorflow-2.12.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading tensorflow-2.12.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.4 kB)
+Collecting jax>=0.3.15 (from tensorflow)
+  Downloading jax-0.4.13.tar.gz (1.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 7.8 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting keras<2.13,>=2.12.0 (from tensorflow)
+  Obtaining dependency information for keras<2.13,>=2.12.0 from https://files.pythonhosted.org/packages/d5/80/34e55d7e3ed9cf18020929460f969de1bf82cf2f509c639b358ae2b25618/keras-2.12.0-py2.py3-none-any.whl.metadata
+  Downloading keras-2.12.0-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting tensorboard
+  Obtaining dependency information for tensorboard from https://files.pythonhosted.org/packages/32/09/86e2ef3b4f4ec04bde0eca499325f291ae6b3313381d0666ee20b5b80c73/tensorboard-2.12.3-py3-none-any.whl.metadata
+  Downloading tensorboard-2.12.3-py3-none-any.whl.metadata (1.8 kB)
+Collecting tensorflow-estimator<2.13,>=2.12.0 (from tensorflow)
+  Obtaining dependency information for tensorflow-estimator<2.13,>=2.12.0 from https://files.pythonhosted.org/packages/d1/e1/c3596da404e2c47561a2bb392397208925e65be6f61bd3081e630371d5e8/tensorflow_estimator-2.12.0-py2.py3-none-any.whl.metadata
+  Downloading tensorflow_estimator-2.12.0-py2.py3-none-any.whl.metadata (1.3 kB)
+Collecting tensorflow
+  Obtaining dependency information for tensorflow from https://files.pythonhosted.org/packages/e4/8a/0c38f712159d698e6216a4006bc91b31ce9c3412aaeae262b07f02db1174/tensorflow-2.12.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading tensorflow-2.12.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.4 kB)
+Collecting numpy
+  Obtaining dependency information for numpy from https://files.pythonhosted.org/packages/c6/4f/63f6f16d3f44a764a3b66c6233e133baf912e198a93e14c39ee991f587d0/numpy-1.23.5-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading numpy-1.23.5-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.3 kB)
+Collecting wrapt<1.15,>=1.11.0 (from tensorflow)
+  Obtaining dependency information for wrapt<1.15,>=1.11.0 from https://files.pythonhosted.org/packages/36/ee/944dc7e5462662270e8a379755bcc543fc8f09029866288060dc163ed5b4/wrapt-1.14.1-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading wrapt-1.14.1-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.7 kB)
+Collecting tensorflow-io-gcs-filesystem>=0.23.1 (from tensorflow)
+  Obtaining dependency information for tensorflow-io-gcs-filesystem>=0.23.1 from https://files.pythonhosted.org/packages/25/f6/0f259f41abaa489f185e16d397d5f5a5973970d4677c7d39456cea6f4453/tensorflow_io_gcs_filesystem-0.34.0-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata
+  Downloading tensorflow_io_gcs_filesystem-0.34.0-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (14 kB)
+Collecting google-auth<3,>=1.6.3 (from tensorboard)
+  Obtaining dependency information for google-auth<3,>=1.6.3 from https://files.pythonhosted.org/packages/9d/47/603554949a37bca5b7f894d51896a9c534b9eab808e2520a748e081669d0/google_auth-2.38.0-py2.py3-none-any.whl.metadata
+  Using cached google_auth-2.38.0-py2.py3-none-any.whl.metadata (4.8 kB)
+Collecting google-auth-oauthlib<1.1,>=0.5 (from tensorboard)
+  Obtaining dependency information for google-auth-oauthlib<1.1,>=0.5 from https://files.pythonhosted.org/packages/4a/07/8d9a8186e6768b55dfffeb57c719bc03770cf8a970a074616ae6f9e26a57/google_auth_oauthlib-1.0.0-py2.py3-none-any.whl.metadata
+  Using cached google_auth_oauthlib-1.0.0-py2.py3-none-any.whl.metadata (2.7 kB)
+Collecting markdown>=2.6.8 (from tensorboard)
+  Obtaining dependency information for markdown>=2.6.8 from https://files.pythonhosted.org/packages/3f/08/83871f3c50fc983b88547c196d11cf8c3340e37c32d2e9d6152abe2c61f7/Markdown-3.7-py3-none-any.whl.metadata
+  Using cached Markdown-3.7-py3-none-any.whl.metadata (7.0 kB)
+Collecting requests<3,>=2.21.0 (from tensorboard)
+  Obtaining dependency information for requests<3,>=2.21.0 from https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl.metadata
+  Using cached requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting tensorboard-data-server<0.8.0,>=0.7.0 (from tensorboard)
+  Obtaining dependency information for tensorboard-data-server<0.8.0,>=0.7.0 from https://files.pythonhosted.org/packages/73/c6/825dab04195756cf8ff2e12698f22513b3db2f64925bdd41671bfb33aaa5/tensorboard_data_server-0.7.2-py3-none-manylinux_2_31_x86_64.whl.metadata
+  Using cached tensorboard_data_server-0.7.2-py3-none-manylinux_2_31_x86_64.whl.metadata (1.1 kB)
+Collecting werkzeug>=1.0.1 (from tensorboard)
+  Obtaining dependency information for werkzeug>=1.0.1 from https://files.pythonhosted.org/packages/6c/69/05837f91dfe42109203ffa3e488214ff86a6d68b2ed6c167da6cdc42349b/werkzeug-3.0.6-py3-none-any.whl.metadata
+  Using cached werkzeug-3.0.6-py3-none-any.whl.metadata (3.7 kB)
+Requirement already satisfied: wheel>=0.26 in /home/dos/PycharmProjects/PersonRecognitionSecurity/.venv/lib/python3.8/site-packages (from tensorboard) (0.41.2)
+Collecting cachetools<6.0,>=2.0.0 (from google-auth<3,>=1.6.3->tensorboard)
+  Obtaining dependency information for cachetools<6.0,>=2.0.0 from https://files.pythonhosted.org/packages/ec/4e/de4ff18bcf55857ba18d3a4bd48c8a9fde6bb0980c9d20b263f05387fd88/cachetools-5.5.1-py3-none-any.whl.metadata
+  Using cached cachetools-5.5.1-py3-none-any.whl.metadata (5.4 kB)
+Collecting pyasn1-modules>=0.2.1 (from google-auth<3,>=1.6.3->tensorboard)
+  Obtaining dependency information for pyasn1-modules>=0.2.1 from https://files.pythonhosted.org/packages/77/89/bc88a6711935ba795a679ea6ebee07e128050d6382eaa35a0a47c8032bdc/pyasn1_modules-0.4.1-py3-none-any.whl.metadata
+  Using cached pyasn1_modules-0.4.1-py3-none-any.whl.metadata (3.5 kB)
+Collecting rsa<5,>=3.1.4 (from google-auth<3,>=1.6.3->tensorboard)
+  Obtaining dependency information for rsa<5,>=3.1.4 from https://files.pythonhosted.org/packages/49/97/fa78e3d2f65c02c8e1268b9aba606569fe97f6c8f7c2d74394553347c145/rsa-4.9-py3-none-any.whl.metadata
+  Using cached rsa-4.9-py3-none-any.whl.metadata (4.2 kB)
+Collecting requests-oauthlib>=0.7.0 (from google-auth-oauthlib<1.1,>=0.5->tensorboard)
+  Obtaining dependency information for requests-oauthlib>=0.7.0 from https://files.pythonhosted.org/packages/3b/5d/63d4ae3b9daea098d5d6f5da83984853c1bbacd5dc826764b249fe119d24/requests_oauthlib-2.0.0-py2.py3-none-any.whl.metadata
+  Using cached requests_oauthlib-2.0.0-py2.py3-none-any.whl.metadata (11 kB)
+Collecting zipp>=3.1.0 (from importlib-resources>=3.2.0->matplotlib)
+  Obtaining dependency information for zipp>=3.1.0 from https://files.pythonhosted.org/packages/62/8b/5ba542fa83c90e09eac972fc9baca7a88e7e7ca4b221a89251954019308b/zipp-3.20.2-py3-none-any.whl.metadata
+  Using cached zipp-3.20.2-py3-none-any.whl.metadata (3.7 kB)
+Collecting ml-dtypes>=0.1.0 (from jax>=0.3.15->tensorflow)
+  Obtaining dependency information for ml-dtypes>=0.1.0 from https://files.pythonhosted.org/packages/e7/db/16992470d8adc93e5230f01b0be8fe32a4eb25cd1c306a2efd1349d36d1a/ml_dtypes-0.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading ml_dtypes-0.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+Collecting scipy>=1.7 (from jax>=0.3.15->tensorflow)
+  Obtaining dependency information for scipy>=1.7 from https://files.pythonhosted.org/packages/69/f0/fb07a9548e48b687b8bf2fa81d71aba9cfc548d365046ca1c791e24db99d/scipy-1.10.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached scipy-1.10.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (58 kB)
+Collecting importlib-metadata>=4.6 (from jax>=0.3.15->tensorflow)
+  Obtaining dependency information for importlib-metadata>=4.6 from https://files.pythonhosted.org/packages/a0/d9/a1e041c5e7caa9a05c925f4bdbdfb7f006d1f74996af53467bc394c97be7/importlib_metadata-8.5.0-py3-none-any.whl.metadata
+  Using cached importlib_metadata-8.5.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting charset-normalizer<4,>=2 (from requests<3,>=2.21.0->tensorboard)
+  Obtaining dependency information for charset-normalizer<4,>=2 from https://files.pythonhosted.org/packages/1e/0d/38ef4ae41e9248d63fc4998d933cae22473b1b2ac4122cf908d0f5eb32aa/charset_normalizer-3.4.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached charset_normalizer-3.4.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (35 kB)
+Collecting idna<4,>=2.5 (from requests<3,>=2.21.0->tensorboard)
+  Obtaining dependency information for idna<4,>=2.5 from https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl.metadata
+  Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting urllib3<3,>=1.21.1 (from requests<3,>=2.21.0->tensorboard)
+  Obtaining dependency information for urllib3<3,>=1.21.1 from https://files.pythonhosted.org/packages/ce/d9/5f4c13cecde62396b0d3fe530a50ccea91e7dfc1ccf0e09c228841bb5ba8/urllib3-2.2.3-py3-none-any.whl.metadata
+  Using cached urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests<3,>=2.21.0->tensorboard)
+  Obtaining dependency information for certifi>=2017.4.17 from https://files.pythonhosted.org/packages/a5/32/8f6669fc4798494966bf446c8c4a162e0b5d893dff088afddf76414f70e1/certifi-2024.12.14-py3-none-any.whl.metadata
+  Using cached certifi-2024.12.14-py3-none-any.whl.metadata (2.3 kB)
+Collecting MarkupSafe>=2.1.1 (from werkzeug>=1.0.1->tensorboard)
+  Obtaining dependency information for MarkupSafe>=2.1.1 from https://files.pythonhosted.org/packages/c7/bd/50319665ce81bb10e90d1cf76f9e1aa269ea6f7fa30ab4521f14d122a3df/MarkupSafe-2.1.5-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached MarkupSafe-2.1.5-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.0 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy->torch)
+  Obtaining dependency information for mpmath<1.4,>=1.1.0 from https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl.metadata
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting pyasn1<0.7.0,>=0.4.6 (from pyasn1-modules>=0.2.1->google-auth<3,>=1.6.3->tensorboard)
+  Obtaining dependency information for pyasn1<0.7.0,>=0.4.6 from https://files.pythonhosted.org/packages/c8/f1/d6a797abb14f6283c0ddff96bbdd46937f64122b8c925cab503dd37f8214/pyasn1-0.6.1-py3-none-any.whl.metadata
+  Using cached pyasn1-0.6.1-py3-none-any.whl.metadata (8.4 kB)
+Collecting oauthlib>=3.0.0 (from requests-oauthlib>=0.7.0->google-auth-oauthlib<1.1,>=0.5->tensorboard)
+  Obtaining dependency information for oauthlib>=3.0.0 from https://files.pythonhosted.org/packages/7e/80/cab10959dc1faead58dc8384a781dfbf93cb4d33d50988f7a69f1b7c9bbe/oauthlib-3.2.2-py3-none-any.whl.metadata
+  Using cached oauthlib-3.2.2-py3-none-any.whl.metadata (7.5 kB)
+Using cached torch-2.4.1-cp38-cp38-manylinux1_x86_64.whl (797.1 MB)
+Using cached nvidia_cublas_cu12-12.1.3.1-py3-none-manylinux1_x86_64.whl (410.6 MB)
+Using cached nvidia_cuda_cupti_cu12-12.1.105-py3-none-manylinux1_x86_64.whl (14.1 MB)
+Using cached nvidia_cuda_nvrtc_cu12-12.1.105-py3-none-manylinux1_x86_64.whl (23.7 MB)
+Using cached nvidia_cuda_runtime_cu12-12.1.105-py3-none-manylinux1_x86_64.whl (823 kB)
+Using cached nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl (664.8 MB)
+Using cached nvidia_cufft_cu12-11.0.2.54-py3-none-manylinux1_x86_64.whl (121.6 MB)
+Using cached nvidia_curand_cu12-10.3.2.106-py3-none-manylinux1_x86_64.whl (56.5 MB)
+Using cached nvidia_cusolver_cu12-11.4.5.107-py3-none-manylinux1_x86_64.whl (124.2 MB)
+Using cached nvidia_cusparse_cu12-12.1.0.106-py3-none-manylinux1_x86_64.whl (196.0 MB)
+Using cached nvidia_nccl_cu12-2.20.5-py3-none-manylinux2014_x86_64.whl (176.2 MB)
+Using cached nvidia_nvtx_cu12-12.1.105-py3-none-manylinux1_x86_64.whl (99 kB)
+Using cached triton-3.0.0-1-cp38-cp38-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (209.4 MB)
+Using cached torchvision-0.19.1-cp38-cp38-manylinux1_x86_64.whl (7.0 MB)
+Using cached matplotlib-3.7.5-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (9.2 MB)
+Downloading tensorflow-2.12.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (585.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 585.9/585.9 MB 2.4 MB/s eta 0:00:00
+Downloading numpy-1.23.5-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.1/17.1 MB 31.2 MB/s eta 0:00:00
+Downloading tensorboard-2.12.3-py3-none-any.whl (5.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.6/5.6 MB 47.3 MB/s eta 0:00:00
+Downloading terminaltables-3.1.10-py2.py3-none-any.whl (15 kB)
+Using cached pillow-10.4.0-cp38-cp38-manylinux_2_28_x86_64.whl (4.5 MB)
+Using cached tqdm-4.67.1-py3-none-any.whl (78 kB)
+Using cached absl_py-2.1.0-py3-none-any.whl (133 kB)
+Downloading astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+Using cached contourpy-1.1.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (301 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading flatbuffers-25.1.24-py2.py3-none-any.whl (30 kB)
+Downloading fonttools-4.55.6-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 48.4 MB/s eta 0:00:00
+Downloading gast-0.4.0-py3-none-any.whl (9.8 kB)
+Using cached google_auth-2.38.0-py2.py3-none-any.whl (210 kB)
+Using cached google_auth_oauthlib-1.0.0-py2.py3-none-any.whl (18 kB)
+Downloading google_pasta-0.2.0-py3-none-any.whl (57 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.5/57.5 kB 10.5 MB/s eta 0:00:00
+Downloading grpcio-1.70.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (6.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.0/6.0 MB 44.3 MB/s eta 0:00:00
+Downloading h5py-3.11.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 52.3 MB/s eta 0:00:00
+Using cached importlib_resources-6.4.5-py3-none-any.whl (36 kB)
+Downloading keras-2.12.0-py2.py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 58.9 MB/s eta 0:00:00
+Using cached kiwisolver-1.4.7-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.whl (1.2 MB)
+Downloading libclang-18.1.1-py2.py3-none-manylinux2010_x86_64.whl (24.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.5/24.5 MB 39.3 MB/s eta 0:00:00
+Using cached Markdown-3.7-py3-none-any.whl (106 kB)
+Downloading opt_einsum-3.4.0-py3-none-any.whl (71 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.9/71.9 kB 13.6 MB/s eta 0:00:00
+Using cached packaging-24.2-py3-none-any.whl (65 kB)
+Downloading protobuf-4.25.6-cp37-abi3-manylinux2014_x86_64.whl (294 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 294.6/294.6 kB 43.1 MB/s eta 0:00:00
+Using cached pyparsing-3.1.4-py3-none-any.whl (104 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached requests-2.32.3-py3-none-any.whl (64 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached tensorboard_data_server-0.7.2-py3-none-manylinux_2_31_x86_64.whl (6.6 MB)
+Downloading tensorflow_estimator-2.12.0-py2.py3-none-any.whl (440 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 440.7/440.7 kB 55.2 MB/s eta 0:00:00
+Downloading tensorflow_io_gcs_filesystem-0.34.0-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (2.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 48.5 MB/s eta 0:00:00
+Downloading termcolor-2.4.0-py3-none-any.whl (7.7 kB)
+Using cached typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Using cached werkzeug-3.0.6-py3-none-any.whl (227 kB)
+Downloading wrapt-1.14.1-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (81 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.0/81.0 kB 20.2 MB/s eta 0:00:00
+Using cached filelock-3.16.1-py3-none-any.whl (16 kB)
+Using cached fsspec-2024.12.0-py3-none-any.whl (183 kB)
+Using cached jinja2-3.1.5-py3-none-any.whl (134 kB)
+Using cached networkx-3.1-py3-none-any.whl (2.1 MB)
+Using cached sympy-1.13.3-py3-none-any.whl (6.2 MB)
+Using cached cachetools-5.5.1-py3-none-any.whl (9.5 kB)
+Using cached certifi-2024.12.14-py3-none-any.whl (164 kB)
+Using cached charset_normalizer-3.4.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (144 kB)
+Using cached idna-3.10-py3-none-any.whl (70 kB)
+Using cached importlib_metadata-8.5.0-py3-none-any.whl (26 kB)
+Using cached MarkupSafe-2.1.5-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (26 kB)
+Downloading ml_dtypes-0.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 47.5 MB/s eta 0:00:00
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Using cached pyasn1_modules-0.4.1-py3-none-any.whl (181 kB)
+Using cached requests_oauthlib-2.0.0-py2.py3-none-any.whl (24 kB)
+Using cached rsa-4.9-py3-none-any.whl (34 kB)
+Using cached scipy-1.10.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (34.5 MB)
+Using cached urllib3-2.2.3-py3-none-any.whl (126 kB)
+Using cached zipp-3.20.2-py3-none-any.whl (9.2 kB)
+Downloading nvidia_nvjitlink_cu12-12.8.61-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (39.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.2/39.2 MB 25.3 MB/s eta 0:00:00
+Using cached oauthlib-3.2.2-py3-none-any.whl (151 kB)
+Using cached pyasn1-0.6.1-py3-none-any.whl (83 kB)
+Building wheels for collected packages: jax
+  Building wheel for jax (pyproject.toml): started
+  Building wheel for jax (pyproject.toml): finished with status 'done'
+  Created wheel for jax: filename=jax-0.4.13-py3-none-any.whl size=1518703 sha256=c25985a092dd27e5f290c812be1758ee1ec4861640d413f63ef1586aaa060b57
+  Stored in directory: /home/dos/.cache/pip/wheels/46/d9/15/d2800d4089dc4c77299ac7513c6aa1036f5491edbd2bf6ba16
+Successfully built jax
+Installing collected packages: mpmath, libclang, flatbuffers, zipp, wrapt, urllib3, typing-extensions, tqdm, terminaltables, termcolor, tensorflow-io-gcs-filesystem, tensorflow-estimator, tensorboard-data-server, sympy, six, pyparsing, pyasn1, protobuf, pillow, packaging, opt-einsum, oauthlib, nvidia-nvtx-cu12, nvidia-nvjitlink-cu12, nvidia-nccl-cu12, nvidia-curand-cu12, nvidia-cufft-cu12, nvidia-cuda-runtime-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-cupti-cu12, nvidia-cublas-cu12, numpy, networkx, MarkupSafe, kiwisolver, keras, idna, grpcio, gast, fsspec, fonttools, filelock, cycler, charset-normalizer, certifi, cachetools, absl-py, werkzeug, triton, scipy, rsa, requests, python-dateutil, pyasn1-modules, nvidia-cusparse-cu12, nvidia-cudnn-cu12, ml-dtypes, jinja2, importlib-resources, importlib-metadata, h5py, google-pasta, contourpy, astunparse, requests-oauthlib, nvidia-cusolver-cu12, matplotlib, markdown, jax, google-auth, torch, google-auth-oauthlib, torchvision, tensorboard, tensorflow
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.24.4
+    Uninstalling numpy-1.24.4:
+      Successfully uninstalled numpy-1.24.4
+Successfully installed MarkupSafe-2.1.5 absl-py-2.1.0 astunparse-1.6.3 cachetools-5.5.1 certifi-2024.12.14 charset-normalizer-3.4.1 contourpy-1.1.1 cycler-0.12.1 filelock-3.16.1 flatbuffers-25.1.24 fonttools-4.55.6 fsspec-2024.12.0 gast-0.4.0 google-auth-2.38.0 google-auth-oauthlib-1.0.0 google-pasta-0.2.0 grpcio-1.70.0 h5py-3.11.0 idna-3.10 importlib-metadata-8.5.0 importlib-resources-6.4.5 jax-0.4.13 jinja2-3.1.5 keras-2.12.0 kiwisolver-1.4.7 libclang-18.1.1 markdown-3.7 matplotlib-3.7.5 ml-dtypes-0.2.0 mpmath-1.3.0 networkx-3.1 numpy-1.23.5 nvidia-cublas-cu12-12.1.3.1 nvidia-cuda-cupti-cu12-12.1.105 nvidia-cuda-nvrtc-cu12-12.1.105 nvidia-cuda-runtime-cu12-12.1.105 nvidia-cudnn-cu12-9.1.0.70 nvidia-cufft-cu12-11.0.2.54 nvidia-curand-cu12-10.3.2.106 nvidia-cusolver-cu12-11.4.5.107 nvidia-cusparse-cu12-12.1.0.106 nvidia-nccl-cu12-2.20.5 nvidia-nvjitlink-cu12-12.8.61 nvidia-nvtx-cu12-12.1.105 oauthlib-3.2.2 opt-einsum-3.4.0 packaging-24.2 pillow-10.4.0 protobuf-4.25.6 pyasn1-0.6.1 pyasn1-modules-0.4.1 pyparsing-3.1.4 python-dateutil-2.9.0.post0 requests-2.32.3 requests-oauthlib-2.0.0 rsa-4.9 scipy-1.10.1 six-1.17.0 sympy-1.13.3 tensorboard-2.12.3 tensorboard-data-server-0.7.2 tensorflow-2.12.0 tensorflow-estimator-2.12.0 tensorflow-io-gcs-filesystem-0.34.0 termcolor-2.4.0 terminaltables-3.1.10 torch-2.4.1 torchvision-0.19.1 tqdm-4.67.1 triton-3.0.0 typing-extensions-4.12.2 urllib3-2.2.3 werkzeug-3.0.6 wrapt-1.14.1 zipp-3.20.2

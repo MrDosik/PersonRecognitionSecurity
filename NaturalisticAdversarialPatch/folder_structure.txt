@@ -1,0 +1,975 @@
+.
+├── adversarialYolo
+│   ├── batch_detect.py
+│   ├── batch_rotate.py
+│   ├── cfg
+│   │   ├── imagenet22k.dataset
+│   │   └── imagenet9k.hierarchy.dataset
+│   ├── cfg.py
+│   ├── ckp.py
+│   ├── color_specified
+│   │   └── values.txt
+│   ├── craft_adv.py
+│   ├── darknet.py
+│   ├── data
+│   │   ├── apples.jpg
+│   │   ├── coco.names
+│   │   ├── dog.jpg
+│   │   ├── eagle.jpg
+│   │   ├── giraffe.jpg
+│   │   ├── horse.jpg
+│   │   ├── horses.jpg
+│   │   ├── kite.jpg
+│   │   ├── person.jpg
+│   │   ├── scream.jpg
+│   │   ├── stop.jpg
+│   │   └── voc.names
+│   ├── dataset.py
+│   ├── debug.py
+│   ├── demo.py
+│   ├── detect.py
+│   ├── DGXContainer
+│   │   ├── Dockerfile
+│   │   └── first_run.sh
+│   ├── DNM65.png
+│   ├── eval.py
+│   ├── Evaluation.ipynb
+│   ├── fail_simple
+│   │   ├── leaf.jpg
+│   │   └── styleTransfer_leaf.jpg
+│   ├── FocalLoss.py
+│   ├── _gitignore
+│   ├── how_to_debug.md
+│   ├── image.py
+│   ├── layers
+│   │   └── batchnorm
+│   ├── LICENSE
+│   ├── load_data.py
+│   ├── load_data_v1.py
+│   ├── load_data_v2.py
+│   ├── load_data_v3.py
+│   ├── map_epoch.txt
+│   ├── mask
+│   │   ├── COVID_19_mask.jpg
+│   │   ├── mask_1.jpg
+│   │   ├── mask_1.png
+│   │   ├── mask_2.jpg
+│   │   ├── mask_2.png
+│   │   └── tedy_bear_mask.jpg
+│   ├── median_pool.py
+│   ├── models
+│   │   ├── caffe_net.py
+│   │   ├── __init__.py
+│   │   ├── resnet.py
+│   │   └── tiny_yolo.py
+│   ├── NeuralStyleAlgorithm_api.py
+│   ├── non_printability
+│   │   ├── 30values_blue.txt
+│   │   ├── 30values_red.txt
+│   │   ├── 30values.txt
+│   │   └── 30values_yellow.txt
+│   ├── oude versies
+│   │   ├── craft_adv_draaien_scalen_plaatsen_werkt.py
+│   │   ├── craft_adv_patch_plaatsen_werkt.py
+│   │   ├── rotate2.py
+│   │   └── rotate.py
+│   ├── partial.py
+│   ├── patch_config.py
+│   ├── patches
+│   │   ├── class_detection.png
+│   │   ├── class_only.png
+│   │   ├── object_score_1.jpg
+│   │   ├── object_score_2.jpg
+│   │   ├── object_score_3.jpg
+│   │   ├── object_score_4.jpg
+│   │   ├── object_score.png
+│   │   └── object_upper.png
+│   ├── patches_transformer.py
+│   ├── patch.jpg
+│   ├── pr-curve.eps
+│   ├── predictions.jpg
+│   ├── pytorch041_cuda92_colab.sh
+│   ├── README.md
+│   ├── recall.py
+│   ├── region_loss.py
+│   ├── requirements.txt
+│   ├── run_docker.sh
+│   ├── sample
+│   │   ├── Figure_2.png
+│   │   ├── Figure_3.png
+│   │   ├── fox_400x400.jpg
+│   │   ├── fox_5x5.jpg
+│   │   ├── fox_60x60.jpg
+│   │   ├── fox_8x8.jpg
+│   │   ├── fox.jpg
+│   │   ├── patch_47.jpg
+│   │   ├── patch_49.jpg
+│   │   ├── patch_50.jpg
+│   │   └── person.jpg
+│   ├── scripts
+│   │   ├── eval_widerface.py
+│   │   ├── voc_eval.py
+│   │   └── voc_label.py
+│   ├── split_color.py
+│   ├── split_img.py
+│   ├── style
+│   │   ├── COVID_19.jpg
+│   │   ├── leaf.jpg
+│   │   └── tedy_bear.jpg
+│   ├── test
+│   │   ├── img
+│   │   └── lab
+│   ├── test_mask.jpg
+│   ├── test_patch (copy).py
+│   ├── test_patch.py
+│   ├── test.py
+│   ├── test_rgb_2_art.py
+│   ├── test_rgb_ycbcr.py
+│   ├── test_split_color.py
+│   ├── tools
+│   │   └── lmdb
+│   ├── train_patch.py
+│   ├── train_patch_temp.py
+│   ├── train.py
+│   ├── train.sh
+│   ├── utils.py
+│   ├── valid.py
+│   └── yolo-labels
+│       ├── crop_000010.txt
+│       ├── crop_000011.txt
+│       ├── crop_000603.txt
+│       ├── crop_000606.txt
+│       ├── crop_000607.txt
+│       ├── crop_000608.txt
+│       ├── crop001001.txt
+│       ├── crop001002.txt
+│       ├── crop001003.txt
+│       ├── crop001004.txt
+│       ├── crop001005.txt
+│       ├── crop001006.txt
+│       ├── crop001007.txt
+│       ├── crop001008.txt
+│       ├── crop001009.txt
+│       ├── crop001010.txt
+│       ├── crop001011.txt
+│       ├── crop001012.txt
+│       ├── crop001013.txt
+│       ├── crop001014.txt
+│       ├── crop001015.txt
+│       ├── crop001016.txt
+│       ├── crop001017.txt
+│       ├── crop001018.txt
+│       ├── crop001019.txt
+│       ├── crop001020.txt
+│       ├── crop001021.txt
+│       ├── crop001022.txt
+│       ├── crop001023.txt
+│       ├── crop001024.txt
+│       ├── crop001025.txt
+│       ├── crop001026.txt
+│       ├── crop001027.txt
+│       ├── crop001028.txt
+│       ├── crop001029.txt
+│       ├── crop001030.txt
+│       ├── crop001031.txt
+│       ├── crop001032.txt
+│       ├── crop001033.txt
+│       ├── crop001034.txt
+│       ├── crop001035.txt
+│       ├── crop001036.txt
+│       ├── crop001037.txt
+│       ├── crop001038.txt
+│       ├── crop001039.txt
+│       ├── crop001040.txt
+│       ├── crop001042.txt
+│       ├── crop001043.txt
+│       ├── crop001044.txt
+│       ├── crop001045.txt
+│       ├── crop001046.txt
+│       ├── crop001047.txt
+│       ├── crop001048.txt
+│       ├── crop001049.txt
+│       ├── crop001050.txt
+│       ├── crop001051.txt
+│       ├── crop001052.txt
+│       ├── crop001053.txt
+│       ├── crop001054.txt
+│       ├── crop001055.txt
+│       ├── crop001056.txt
+│       ├── crop001057.txt
+│       ├── crop001058.txt
+│       ├── crop001059.txt
+│       ├── crop001060.txt
+│       ├── crop001061.txt
+│       ├── crop001063.txt
+│       ├── crop001064.txt
+│       ├── crop001066.txt
+│       ├── crop001068.txt
+│       ├── crop001069.txt
+│       ├── crop001070.txt
+│       ├── crop001071.txt
+│       ├── crop001072.txt
+│       ├── crop001073.txt
+│       ├── crop001074.txt
+│       ├── crop001075.txt
+│       ├── crop001078.txt
+│       ├── crop001079.txt
+│       ├── crop001081.txt
+│       ├── crop001083.txt
+│       ├── crop001084.txt
+│       ├── crop001085.txt
+│       ├── crop001086.txt
+│       ├── crop001087.txt
+│       ├── crop001088.txt
+│       ├── crop001089.txt
+│       ├── crop001090.txt
+│       ├── crop001091.txt
+│       ├── crop001092.txt
+│       ├── crop001093.txt
+│       ├── crop001094.txt
+│       ├── crop001095.txt
+│       ├── crop001096.txt
+│       ├── crop001097.txt
+│       ├── crop001098.txt
+│       ├── crop001099.txt
+│       ├── crop001102.txt
+│       ├── crop001103.txt
+│       ├── crop001104.txt
+│       ├── crop001105.txt
+│       ├── crop001106.txt
+│       ├── crop001107.txt
+│       ├── crop001108.txt
+│       ├── crop001109.txt
+│       ├── crop001110.txt
+│       ├── crop001111.txt
+│       ├── crop001112.txt
+│       ├── crop001113.txt
+│       ├── crop001114.txt
+│       ├── crop001115.txt
+│       ├── crop001116.txt
+│       ├── crop001119.txt
+│       ├── crop001120.txt
+│       ├── crop001121.txt
+│       ├── crop001122.txt
+│       ├── crop001123.txt
+│       ├── crop001124.txt
+│       ├── crop001125.txt
+│       ├── crop001126.txt
+│       ├── crop001127.txt
+│       ├── crop001128.txt
+│       ├── crop001129.txt
+│       ├── crop001130.txt
+│       ├── crop001131.txt
+│       ├── crop001132.txt
+│       ├── crop001133.txt
+│       ├── crop001134.txt
+│       ├── crop001135.txt
+│       ├── crop001136.txt
+│       ├── crop001137.txt
+│       ├── crop001138.txt
+│       ├── crop001140.txt
+│       ├── crop001141.txt
+│       ├── crop001142.txt
+│       ├── crop001143.txt
+│       ├── crop001144.txt
+│       ├── crop001145.txt
+│       ├── crop001146.txt
+│       ├── crop001147.txt
+│       ├── crop001148.txt
+│       ├── crop001149.txt
+│       ├── crop001150.txt
+│       ├── crop001151.txt
+│       ├── crop001152.txt
+│       ├── crop001153.txt
+│       ├── crop001154.txt
+│       ├── crop001155.txt
+│       ├── crop001156.txt
+│       ├── crop001158.txt
+│       ├── crop001160.txt
+│       ├── crop001162.txt
+│       ├── crop001163.txt
+│       ├── crop001164.txt
+│       ├── crop001200.txt
+│       ├── crop001201.txt
+│       ├── crop001202.txt
+│       ├── crop001205.txt
+│       ├── crop001206.txt
+│       ├── crop001207.txt
+│       ├── crop001208.txt
+│       ├── crop001210.txt
+│       ├── crop001211.txt
+│       ├── crop001212.txt
+│       ├── crop001213.txt
+│       ├── crop001214.txt
+│       ├── crop001216.txt
+│       ├── crop001217.txt
+│       ├── crop001218.txt
+│       ├── crop001219.txt
+│       ├── crop001220.txt
+│       ├── crop001222.txt
+│       ├── crop001230.txt
+│       ├── crop001231.txt
+│       ├── crop001232.txt
+│       ├── crop001234.txt
+│       ├── crop001235.txt
+│       ├── crop001236.txt
+│       ├── crop001237.txt
+│       ├── crop001238.txt
+│       ├── crop001241.txt
+│       ├── crop001242.txt
+│       ├── crop001246.txt
+│       ├── crop001247.txt
+│       ├── crop001248.txt
+│       ├── crop001250.txt
+│       ├── crop001251.txt
+│       ├── crop001252.txt
+│       ├── crop001253.txt
+│       ├── crop001254.txt
+│       ├── crop001255.txt
+│       ├── crop001256.txt
+│       ├── crop001257.txt
+│       ├── crop001258.txt
+│       ├── crop001259.txt
+│       ├── crop001260.txt
+│       ├── crop001263.txt
+│       ├── crop001264.txt
+│       ├── crop001265.txt
+│       ├── crop001267.txt
+│       ├── crop001268.txt
+│       ├── crop001270.txt
+│       ├── crop001271.txt
+│       ├── crop001272.txt
+│       ├── crop001273.txt
+│       ├── crop001274.txt
+│       ├── crop001275.txt
+│       ├── crop001276.txt
+│       ├── crop001278.txt
+│       ├── crop001500.txt
+│       ├── crop001503.txt
+│       ├── crop001505.txt
+│       ├── crop001506.txt
+│       ├── crop001507.txt
+│       ├── crop001508.txt
+│       ├── crop001509.txt
+│       ├── crop001510.txt
+│       ├── crop001513.txt
+│       ├── crop001515.txt
+│       ├── crop001516.txt
+│       ├── crop001517.txt
+│       ├── crop001518.txt
+│       ├── crop001519.txt
+│       ├── crop001523.txt
+│       ├── crop001524.txt
+│       ├── crop001525.txt
+│       ├── crop001526.txt
+│       ├── crop001527.txt
+│       ├── crop001528.txt
+│       ├── crop001529.txt
+│       ├── crop001530.txt
+│       ├── crop001532.txt
+│       ├── crop001534.txt
+│       ├── crop001536.txt
+│       ├── crop001537.txt
+│       ├── crop001538.txt
+│       ├── crop001539.txt
+│       ├── crop001540.txt
+│       ├── crop001541.txt
+│       ├── crop001542.txt
+│       ├── crop001543.txt
+│       ├── crop001547.txt
+│       ├── crop001548.txt
+│       ├── crop001550.txt
+│       ├── crop001551.txt
+│       ├── crop001552.txt
+│       ├── crop001553.txt
+│       ├── crop001554.txt
+│       ├── crop001556.txt
+│       ├── crop001557.txt
+│       ├── crop001558.txt
+│       ├── crop001559.txt
+│       ├── crop001560.txt
+│       ├── crop001561.txt
+│       ├── crop001562.txt
+│       ├── crop001563.txt
+│       ├── crop001564.txt
+│       ├── crop001565.txt
+│       ├── crop001567.txt
+│       ├── crop001568.txt
+│       ├── crop001569.txt
+│       ├── crop001570.txt
+│       ├── crop001571.txt
+│       ├── crop001572.txt
+│       ├── crop001577.txt
+│       ├── crop001578.txt
+│       ├── crop001579.txt
+│       ├── crop001580.txt
+│       ├── crop001581.txt
+│       ├── crop001582.txt
+│       ├── crop001583.txt
+│       ├── crop001584.txt
+│       ├── crop001589.txt
+│       ├── crop001591.txt
+│       ├── crop001592.txt
+│       ├── crop001594.txt
+│       ├── crop001595.txt
+│       ├── crop001596.txt
+│       ├── crop001597.txt
+│       ├── crop001598.txt
+│       ├── crop001599.txt
+│       ├── crop001600.txt
+│       ├── crop001601.txt
+│       ├── crop001603.txt
+│       ├── crop001605.txt
+│       ├── crop001606.txt
+│       ├── crop001608.txt
+│       ├── crop001609.txt
+│       ├── crop001610.txt
+│       ├── crop001611.txt
+│       ├── crop001612.txt
+│       ├── crop001613.txt
+│       ├── crop001614.txt
+│       ├── crop001615.txt
+│       ├── crop001616.txt
+│       ├── crop001617.txt
+│       ├── crop001618.txt
+│       ├── crop001619.txt
+│       ├── crop001620.txt
+│       ├── crop001621.txt
+│       ├── crop001622.txt
+│       ├── crop001623.txt
+│       ├── crop001624.txt
+│       ├── crop001625.txt
+│       ├── crop001626.txt
+│       ├── crop001627.txt
+│       ├── crop001628.txt
+│       ├── crop001629.txt
+│       ├── crop001630.txt
+│       ├── crop001632.txt
+│       ├── crop001635.txt
+│       ├── crop001636.txt
+│       ├── crop001637.txt
+│       ├── crop001640.txt
+│       ├── crop001642.txt
+│       ├── crop001643.txt
+│       ├── crop001644.txt
+│       ├── crop001646.txt
+│       ├── crop001647.txt
+│       ├── crop001648.txt
+│       ├── crop001649.txt
+│       ├── crop001650.txt
+│       ├── crop001651.txt
+│       ├── crop001652.txt
+│       ├── crop001655.txt
+│       ├── crop001656.txt
+│       ├── crop001657.txt
+│       ├── crop001662.txt
+│       ├── crop001663.txt
+│       ├── crop001665.txt
+│       ├── crop001666.txt
+│       ├── crop001667.txt
+│       ├── crop001668.txt
+│       ├── crop001669.txt
+│       ├── crop001671.txt
+│       ├── crop001672.txt
+│       ├── crop001673.txt
+│       ├── crop001674.txt
+│       ├── crop001675.txt
+│       ├── crop001677.txt
+│       ├── crop001678.txt
+│       ├── crop001679.txt
+│       ├── crop001680.txt
+│       ├── crop001681.txt
+│       ├── crop001685.txt
+│       ├── crop001686.txt
+│       ├── crop001687.txt
+│       ├── crop001689.txt
+│       ├── crop001690.txt
+│       ├── crop001691.txt
+│       ├── crop001692.txt
+│       ├── crop001693.txt
+│       ├── crop001694.txt
+│       ├── crop001695.txt
+│       ├── crop001696.txt
+│       ├── crop001697.txt
+│       ├── crop001698.txt
+│       ├── crop001699.txt
+│       ├── crop001700.txt
+│       ├── crop001701.txt
+│       ├── crop001702.txt
+│       ├── crop001703.txt
+│       ├── crop001705.txt
+│       ├── crop001707.txt
+│       ├── crop001708.txt
+│       ├── crop001709.txt
+│       ├── crop001710.txt
+│       ├── crop001711.txt
+│       ├── crop001712.txt
+│       ├── crop001713.txt
+│       ├── crop001714.txt
+│       ├── crop001717.txt
+│       ├── crop001720.txt
+│       ├── crop001721.txt
+│       ├── crop001806.txt
+│       ├── crop001807.txt
+│       ├── crop001808.txt
+│       ├── crop001809.txt
+│       ├── crop001810.txt
+│       ├── crop001811.txt
+│       ├── crop001812.txt
+│       ├── crop001813.txt
+│       ├── crop001814.txt
+│       ├── crop001815.txt
+│       ├── crop001816.txt
+│       ├── crop001817.txt
+│       ├── crop001818.txt
+│       ├── crop001819.txt
+│       ├── crop001820.txt
+│       ├── crop001823.txt
+│       ├── crop001824.txt
+│       ├── crop001829.txt
+│       ├── crop001830.txt
+│       ├── crop001831.txt
+│       ├── crop001832.txt
+│       ├── crop001833.txt
+│       ├── crop001835.txt
+│       ├── crop001836.txt
+│       ├── crop001837.txt
+│       ├── crop001838.txt
+│       ├── crop001839.txt
+│       ├── crop001840.txt
+│       ├── crop001841.txt
+│       ├── crop001842.txt
+│       ├── crop001843.txt
+│       ├── person_044.txt
+│       ├── person_050.txt
+│       ├── person_060.txt
+│       ├── person_061.txt
+│       ├── person_086.txt
+│       ├── person_091.txt
+│       ├── person_097.txt
+│       ├── person_101.txt
+│       ├── person_102.txt
+│       ├── person_103.txt
+│       ├── person_106.txt
+│       ├── person_111.txt
+│       ├── person_112.txt
+│       ├── person_114.txt
+│       ├── person_117.txt
+│       ├── person_119.txt
+│       ├── person_121.txt
+│       ├── person_124.txt
+│       ├── person_125.txt
+│       ├── person_126.txt
+│       ├── person_128.txt
+│       ├── person_129.txt
+│       ├── person_130.txt
+│       ├── person_131.txt
+│       ├── person_133.txt
+│       ├── person_139.txt
+│       ├── person_141.txt
+│       ├── person_142.txt
+│       ├── person_143.txt
+│       ├── person_156.txt
+│       ├── person_160.txt
+│       ├── person_162.txt
+│       ├── person_165.txt
+│       ├── person_166.txt
+│       ├── person_167.txt
+│       ├── person_168.txt
+│       ├── person_169.txt
+│       ├── person_170.txt
+│       ├── person_171.txt
+│       ├── person_172.txt
+│       ├── person_173.txt
+│       ├── person_174.txt
+│       ├── person_175.txt
+│       ├── person_176.txt
+│       ├── person_177.txt
+│       ├── person_178.txt
+│       ├── person_179.txt
+│       ├── person_181.txt
+│       ├── person_185.txt
+│       ├── person_187.txt
+│       ├── person_195.txt
+│       ├── person_196.txt
+│       ├── person_199.txt
+│       ├── person_201.txt
+│       ├── person_202.txt
+│       ├── person_203.txt
+│       ├── person_208.txt
+│       ├── person_209.txt
+│       ├── person_211.txt
+│       ├── person_214.txt
+│       ├── person_219.txt
+│       ├── person_220.txt
+│       ├── person_221.txt
+│       ├── person_223.txt
+│       ├── person_224.txt
+│       ├── person_225.txt
+│       ├── person_228.txt
+│       ├── person_229.txt
+│       ├── person_231.txt
+│       ├── person_232.txt
+│       ├── person_233.txt
+│       ├── person_234.txt
+│       ├── person_235.txt
+│       ├── person_237.txt
+│       ├── person_238.txt
+│       ├── person_239.txt
+│       ├── person_240.txt
+│       ├── person_241.txt
+│       ├── person_242.txt
+│       ├── person_243.txt
+│       ├── person_244.txt
+│       ├── person_245.txt
+│       ├── person_252.txt
+│       ├── person_253.txt
+│       ├── person_254.txt
+│       ├── person_256.txt
+│       ├── person_257.txt
+│       ├── person_258.txt
+│       ├── person_259.txt
+│       ├── person_260.txt
+│       ├── person_266.txt
+│       ├── person_269.txt
+│       ├── person_270.txt
+│       ├── person_273.txt
+│       ├── person_274.txt
+│       ├── person_275.txt
+│       ├── person_279.txt
+│       ├── person_281.txt
+│       ├── person_283.txt
+│       ├── person_284.txt
+│       ├── person_285.txt
+│       ├── person_286.txt
+│       ├── person_287.txt
+│       ├── person_288.txt
+│       ├── person_289.txt
+│       ├── person_291.txt
+│       ├── person_292.txt
+│       ├── person_294.txt
+│       ├── person_295.txt
+│       ├── person_296.txt
+│       ├── person_297.txt
+│       ├── person_298.txt
+│       ├── person_299.txt
+│       ├── person_300.txt
+│       ├── person_301.txt
+│       ├── person_302.txt
+│       ├── person_304.txt
+│       ├── person_305.txt
+│       ├── person_319.txt
+│       ├── person_320.txt
+│       ├── person_321.txt
+│       ├── person_324.txt
+│       ├── person_327.txt
+│       ├── person_328.txt
+│       ├── person_329.txt
+│       ├── person_331.txt
+│       ├── person_333.txt
+│       ├── person_334.txt
+│       ├── person_339.txt
+│       ├── person_340.txt
+│       ├── person_341.txt
+│       ├── person_342.txt
+│       ├── person_343.txt
+│       ├── person_344.txt
+│       ├── person_346.txt
+│       ├── person_348.txt
+│       ├── person_349.txt
+│       ├── person_356.txt
+│       ├── person_357.txt
+│       ├── person_358.txt
+│       ├── person_376.txt
+│       ├── person_377.txt
+│       ├── person_378.txt
+│       ├── person_387.txt
+│       ├── person_395.txt
+│       ├── person_414.txt
+│       ├── person_425.txt
+│       ├── person_and_bike_002.txt
+│       ├── person_and_bike_003.txt
+│       ├── person_and_bike_005.txt
+│       ├── person_and_bike_007.txt
+│       ├── person_and_bike_008.txt
+│       ├── person_and_bike_009.txt
+│       ├── person_and_bike_010.txt
+│       ├── person_and_bike_011.txt
+│       ├── person_and_bike_013.txt
+│       ├── person_and_bike_015.txt
+│       ├── person_and_bike_016.txt
+│       ├── person_and_bike_017.txt
+│       ├── person_and_bike_019.txt
+│       ├── person_and_bike_020.txt
+│       ├── person_and_bike_021.txt
+│       ├── person_and_bike_022.txt
+│       ├── person_and_bike_023.txt
+│       ├── person_and_bike_026.txt
+│       ├── person_and_bike_030.txt
+│       ├── person_and_bike_031.txt
+│       ├── person_and_bike_033.txt
+│       ├── person_and_bike_034.txt
+│       ├── person_and_bike_036.txt
+│       ├── person_and_bike_039.txt
+│       ├── person_and_bike_040.txt
+│       ├── person_and_bike_074.txt
+│       ├── person_and_bike_075.txt
+│       ├── person_and_bike_078.txt
+│       ├── person_and_bike_117.txt
+│       ├── person_and_bike_118.txt
+│       ├── person_and_bike_119.txt
+│       ├── person_and_bike_120.txt
+│       ├── person_and_bike_121.txt
+│       ├── person_and_bike_123.txt
+│       ├── person_and_bike_124.txt
+│       ├── person_and_bike_125.txt
+│       ├── person_and_bike_127.txt
+│       ├── person_and_bike_128.txt
+│       ├── person_and_bike_129.txt
+│       ├── person_and_bike_130.txt
+│       ├── person_and_bike_132.txt
+│       ├── person_and_bike_134.txt
+│       ├── person_and_bike_135.txt
+│       ├── person_and_bike_137.txt
+│       ├── person_and_bike_138.txt
+│       ├── person_and_bike_139.txt
+│       ├── person_and_bike_142.txt
+│       ├── person_and_bike_143.txt
+│       ├── person_and_bike_146.txt
+│       ├── person_and_bike_147.txt
+│       ├── person_and_bike_148.txt
+│       ├── person_and_bike_150.txt
+│       ├── person_and_bike_151.txt
+│       ├── person_and_bike_152.txt
+│       ├── person_and_bike_155.txt
+│       ├── person_and_bike_156.txt
+│       ├── person_and_bike_157.txt
+│       ├── person_and_bike_166.txt
+│       ├── person_and_bike_191.txt
+│       ├── person_and_bike_207.txt
+│       ├── person_and_bike_208.txt
+│       └── person_and_bike_209.txt
+├── camera_test.py
+├── cmb10.ttf
+├── count_map
+│   ├── __init__.py
+│   ├── LICENSE
+│   ├── main.py
+│   ├── README.md
+│   └── scripts
+│       └── extra
+├── dataset
+│   ├── inria
+│   │   ├── 70X134H96
+│   │   ├── 96X160H96
+│   │   ├── Test
+│   │   ├── test_64x128_H96
+│   │   ├── Train
+│   │   └── train_64x128_H96
+│   ├── inria.tar
+│   ├── test_inria_label
+│   │   ├── yolo-labels-rescale_yolov2
+│   │   ├── yolo-labels-rescale_yolov3
+│   │   ├── yolo-labels-rescale_yolov3tiny
+│   │   ├── yolo-labels-rescale_yolov4
+│   │   ├── yolo-labels-rescale_yolov4tiny
+│   │   ├── yolo-labels_yolov2
+│   │   ├── yolo-labels_yolov3
+│   │   ├── yolo-labels_yolov3tiny
+│   │   ├── yolo-labels_yolov4
+│   │   └── yolo-labels_yolov4tiny
+│   ├── test_label.zip
+│   ├── train_inria_label
+│   │   ├── yolo-labels-rescale_yolov2
+│   │   ├── yolo-labels-rescale_yolov3
+│   │   ├── yolo-labels-rescale_yolov3tiny
+│   │   ├── yolo-labels-rescale_yolov4
+│   │   ├── yolo-labels-rescale_yolov4tiny
+│   │   ├── yolo-labels_yolov2
+│   │   ├── yolo-labels_yolov3
+│   │   ├── yolo-labels_yolov3tiny
+│   │   ├── yolo-labels_yolov4
+│   │   └── yolo-labels_yolov4tiny
+│   └── train_label.zip
+├── download_inria.sh
+├── ensemble.py
+├── ensemble_tool
+│   ├── __init__.py
+│   ├── model.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-38.pyc
+│   │   └── utils.cpython-38.pyc
+│   └── utils.py
+├── evaluation.py
+├── folder_structure.txt
+├── GANLatentDiscovery
+│   ├── constants.py
+│   ├── download.py
+│   ├── download_weights.sh
+│   ├── evaluation.ipynb
+│   ├── evaluation.py
+│   ├── images
+│   │   ├── bigbigan_mushroom_light.gif
+│   │   ├── bird_rotation.gif
+│   │   └── stylegan2_kid2_eyes.gif
+│   ├── __init__.py
+│   ├── latent_deformator.py
+│   ├── latent_shift_predictor.py
+│   ├── licenses
+│   │   ├── LICENSE-BigGAN-PyTorch
+│   │   ├── LICENSE-NVIDIA
+│   │   ├── LICENSE-StyleGAN2-PyTorch
+│   │   └── LICENSE_UNET
+│   ├── loading.py
+│   ├── models
+│   │   ├── BigGAN
+│   │   ├── gan_load.py
+│   │   ├── gan_with_shift.py
+│   │   ├── __init__.py
+│   │   ├── pretrained
+│   │   ├── ProgGAN
+│   │   ├── SNGAN
+│   │   └── StyleGAN2
+│   ├── ortho_utils.py
+│   ├── pseudo_label
+│   │   ├── data.py
+│   │   ├── __init__.py
+│   │   ├── pseudo_label_classifier.py
+│   │   └── train.py
+│   ├── README.md
+│   ├── rectification_results_dir
+│   │   ├── command.sh
+│   │   └── tensorboard
+│   ├── run_train.py
+│   ├── segmentation
+│   │   ├── data.py
+│   │   ├── gan_segmentation.py
+│   │   ├── inference.py
+│   │   ├── metrics.py
+│   │   ├── train_segmentation.py
+│   │   ├── unet_model.py
+│   │   └── unet_parts.py
+│   ├── {tmp_tar}
+│   ├── torch_tools
+│   │   ├── constants.py
+│   │   ├── data.py
+│   │   ├── gan_sampling.py
+│   │   ├── __init__.py
+│   │   ├── modules.py
+│   │   ├── utils.py
+│   │   └── visualization.py
+│   ├── trainer.py
+│   ├── train_log.py
+│   ├── utils.py
+│   └── visualization.py
+├── gif_plot.py
+├── patch
+│   ├── ap_illustration_1jpg_Page1.jpg
+│   ├── e61v2.png
+│   ├── e70v3.png
+│   ├── e88v3t.png
+│   ├── faster.png
+│   ├── teaser1.png
+│   ├── teaser.jpg
+│   ├── v4.png
+│   └── v4tiny.png
+├── pretrained
+│   └── deformators
+│       └── BigGAN
+├── pytorch_pretrained_detection.py
+├── PyTorchYOLOv3
+│   ├── command.txt
+│   ├── config
+│   │   └── create_custom_model.sh
+│   ├── data
+│   │   ├── coco.names
+│   │   ├── custom
+│   │   └── get_coco_dataset.sh
+│   ├── detect.py
+│   ├── LICENSE
+│   ├── models.py
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── test.py
+│   ├── train.py
+│   ├── utils
+│   │   ├── augmentations.py
+│   │   ├── datasets.py
+│   │   ├── __init__.py
+│   │   ├── logger.py
+│   │   ├── parse_config.py
+│   │   └── utils.py
+│   └── weights
+│       └── download_weights.sh
+├── pytorchYOLOv4
+│   ├── cfg
+│   │   ├── yolov3.cfg
+│   │   ├── yolov3-tiny.cfg
+│   │   ├── yolov4.cfg
+│   │   ├── yolov4-custom.cfg
+│   │   └── yolov4-tiny.cfg
+│   ├── cfg.py
+│   ├── command.txt
+│   ├── data
+│   │   ├── coco.names
+│   │   └── voc.names
+│   ├── dataset.py
+│   ├── DeepStream
+│   │   ├── config_infer_primary_yoloV4.txt
+│   │   ├── deepstream_app_config_yoloV4.txt
+│   │   ├── labels.txt
+│   │   ├── nvdsinfer_custom_impl_Yolo
+│   │   └── Readme.md
+│   ├── demo_darknet2onnx.py
+│   ├── demo.py
+│   ├── demo_pytorch2onnx.py
+│   ├── demo_tensorflow.py
+│   ├── demo_trt.py
+│   ├── evaluate_on_coco.py
+│   ├── License.txt
+│   ├── models.py
+│   ├── README.md
+│   ├── tool
+│   │   ├── camera.py
+│   │   ├── coco_annotation.py
+│   │   ├── config.py
+│   │   ├── darknet2onnx.py
+│   │   ├── darknet2pytorch.py
+│   │   ├── __init__.py
+│   │   ├── onnx2tensorflow.py
+│   │   ├── region_loss.py
+│   │   ├── torch_utils.py
+│   │   ├── tv_reference
+│   │   ├── utils_iou.py
+│   │   ├── utils_iou_test.py
+│   │   ├── utils.py
+│   │   └── yolo_layer.py
+│   ├── train.py
+│   └── Use_yolov4_to_train_your_own_data.md
+├── README.md
+├── requirements.txt
+├── resize_patch.py
+├── stylegan2_pytorch
+│   ├── __init__.py
+│   ├── LICENSE.txt
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── run_convert_from_tf.py
+│   ├── run_generator.py
+│   ├── run_metrics.py
+│   ├── run_projector.py
+│   ├── run_training.py
+│   └── stylegan2
+│       ├── external_models
+│       ├── __init__.py
+│       ├── loss_fns.py
+│       ├── metrics
+│       ├── models.py
+│       ├── modules.py
+│       ├── project.py
+│       ├── train.py
+│       └── utils.py
+└── utils
+    └── utils.py
+
+93 directories, 879 files
