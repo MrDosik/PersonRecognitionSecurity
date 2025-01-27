@@ -1,0 +1,10 @@
+# Ignore Python virtual environment
+.venv/
+venv/
+
+# Ignore compiled binary files
+*.so
+*.dll
+*.exe
+*.bin
+
