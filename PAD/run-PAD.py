@@ -18,10 +18,10 @@ iou_thre = 0.5
 ratio_mi = 0.5 # ratio_cd = 1-ratio_mi
 kernel_pram = 80
 thresh_pram = 80 # percentile, from small to big
-input_path = "/home/dell/jlh/ultralytics/ultralytics/datasets/inria/images/inria_P6/"
+input_path = "/home/dos/PycharmProjects/PersonRecognitionSecurity/NaturalisticAdversarialPatch/eval_output/yolov3_temp_f/output_imgs/"
 # image_path = "/home/dell/jlh/ultralytics/ultralytics/datasets/inria/images/inria_P3/"
 # final_map_path = "/home/dell/jlh/my_patch_defense/code/inria_P3_final_map"
-save_path = "defended_inria_P6/"
+save_path = "defended_inria_4tiny/"
 
 def get_mask(image, mask_generator):
     
@@ -29,7 +29,7 @@ def get_mask(image, mask_generator):
     return masks
 
 if __name__ == "__main__":
-    device = "cuda:0"
+    device = "cpu"
     # sam = sam_model_registry["vit_b"](checkpoint="models/sam_vit_b_01ec64.pth")
     sam = sam_model_registry["vit_l"](checkpoint="segment-anything/models/sam_vit_l_0b3195.pth")
     sam.to(device=device)

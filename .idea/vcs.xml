@@ -5,5 +5,7 @@
     <mapping directory="$PROJECT_DIR$/NaturalisticAdversarialPatch" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/PAD" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/PatchCleanser" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/segment-anything" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/segment-anything-2" vcs="Git" />
   </component>
 </project>
