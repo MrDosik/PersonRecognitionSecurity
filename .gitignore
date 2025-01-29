@@ -14,3 +14,8 @@ venv/lib/python3.8/site-packages/torch/lib/libtorch_cpu.so
 venv/lib/python3.8/site-packages/torch/lib/libtorch_cuda.so
 venv/lib/python3.8/site-packages/cv2/cv2.cpython-38-x86_64-linux-gnu.so
 venv/lib/python3.8/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux64-v4.2.2
+
+.idea/
+segment-anything/
+segment-anything-2/
+__pycache__/
