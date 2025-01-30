@@ -14,7 +14,7 @@ from utils.defense import gen_mask_set,double_masking_precomputed,certify_precom
 parser = argparse.ArgumentParser()
 parser.add_argument("--model_dir",default='checkpoints',type=str,help="directory of checkpoints")
 parser.add_argument('--data_dir', default='data', type=str,help="directory of data")
-parser.add_argument('--dataset', default='imagenette',type=str,choices=('imagenette','imagenet','cifar','cifar100','svhn','flower102'),help="dataset")
+parser.add_argument('--dataset', default='imagenette',type=str,choices=('imagenette','imagenet','cifar','cifar100','svhn','flower102', 'e88v3t_patched'),help="dataset")
 parser.add_argument("--model",default='vit_base_patch16_224',type=str,help="model name")
 parser.add_argument("--num_img",default=-1,type=int,help="number of randomly selected images for this experiment (-1: using the all images)")
 parser.add_argument("--mask_stride",default=-1,type=int,help="mask stride s (square patch; conflict with num_mask)")
@@ -38,9 +38,12 @@ NUM_IMG = args.num_img
 
 #get model and data loader
 model = get_model(MODEL_NAME,DATASET,MODEL_DIR)
-val_loader,NUM_IMG,ds_config = get_data_loader(DATASET,DATA_DIR,model,batch_size=16,num_img=NUM_IMG,train=False)
+#val_loader,NUM_IMG,ds_config = get_data_loader(DATASET,DATA_DIR,model,batch_size=16,num_img=NUM_IMG,train=False)
+val_loader, NUM_IMG, ds_config = get_data_loader("e88v3t_patched", DATA_DIR, model, batch_size=16, num_img=NUM_IMG, train=False)
 
-device = 'cuda' 
+
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = model.to(device)
 model.eval()
 cudnn.benchmark = True

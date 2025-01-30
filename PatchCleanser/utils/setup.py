@@ -7,7 +7,8 @@ import numpy as np
 import os 
 
 
-NUM_CLASSES_DICT = {'imagenette':10,'imagenet':1000,'flower102':102,'cifar':10,'cifar100':100,'svhn':10}
+NUM_CLASSES_DICT = {'imagenette':10, 'imagenet':1000, 'flower102':102, 'cifar':10, 'cifar100':100, 'svhn':10, 'e88v3t_patched': 1}
+
 
 def get_model(model_name,dataset_name,model_dir):
 
@@ -42,13 +43,16 @@ def get_model(model_name,dataset_name,model_dir):
     if not timm_pretrained: 
         model.reset_classifier(num_classes=NUM_CLASSES_DICT[dataset_name])
         checkpoint_name = model_name + '_{}.pth'.format(dataset_name) 
-        checkpoint = torch.load(os.path.join(model_dir,checkpoint_name))
-        if 'mae' not in model_name:
-            model.load_state_dict(checkpoint['state_dict']) 
-        else:
-            msg = model.load_state_dict(checkpoint['model'],strict=False) 
-            print(msg)
-            
+        checkpoint = torch.load(os.path.join(model_dir, checkpoint_name), map_location=torch.device('cpu'))
+        # Remove classifier weights to avoid shape mismatch issues
+        if "state_dict" in checkpoint:
+            checkpoint = checkpoint["state_dict"]
+
+        checkpoint = {k: v for k, v in checkpoint.items() if "head.weight" not in k and "head.bias" not in k}
+
+        # Load modified checkpoint
+        model.load_state_dict(checkpoint, strict=False)
+
 
     return model
 
@@ -98,7 +102,37 @@ def get_data_loader(dataset_name,data_dir,model,batch_size=1,num_img=-1,train=Fa
             dataset_ = datasets.CIFAR100(root=data_dir, train=train, download=True, transform=ds_transforms)  
         elif dataset_name == 'svhn':
             split = 'train' if train else 'test'
-            dataset_ = datasets.SVHN(root=data_dir, split=split, download=True, transform=ds_transforms) 
+            dataset_ = datasets.SVHN(root=data_dir, split=split, download=True, transform=ds_transforms)
+
+
+
+
+
+
+    elif dataset_name == 'e88v3t_patched':
+
+        config = resolve_data_config({}, model=model)
+
+        ds_transforms = create_transform(**config)
+
+        # Fixing dataset path manually to avoid duplicate folder name
+
+        dataset_path = os.path.join(data_dir,"single_class")  # Corrected!
+
+        print(f"Loading dataset from: {dataset_path}")  # Debugging output
+
+        if not os.path.isdir(dataset_path):
+            raise ValueError(f"Dataset path does not exist or is not a directory: {dataset_path}")
+
+        dataset_ = datasets.ImageFolder(dataset_path, ds_transforms)
+
+
+
+
+
+
+    else:
+        raise ValueError(f"Dataset {dataset_name} not recognized!")
 
     # select a random set of test images (when args.num_img>0)
     np.random.seed(233333333)#random seed for selecting test images
