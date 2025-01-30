@@ -56,7 +56,7 @@ enable_projection          = False
 enable_rectOccluding       = False
 enable_blurred             = False
 # output images with bbox
-enable_with_bbox           = False            # outputs with bbox
+enable_with_bbox           = True            # outputs with bbox
 # other setting
 enable_show_plt            = False           # check output images during testing by human
 enable_no_random           = True            # NOT randon patch "light and shadow changes"
@@ -75,7 +75,7 @@ fake_images_path = apt1.patch
 # data source
 video_name                 = "WIN_20210113_18_36_46_Pro"     # WIN_20200903_16_52_27_Pro, WIN_20200903_17_17_34_Pro, WIN_20210113_18_36_46_Pro
 video_folder               = "./dataset/video/"
-source_folder              = "./dataset/inria/Test/pos/"    # ../dataset/inria/Train/pos/   ,   ../dataset/inria/Test/pos/
+source_folder              = "/home/dos/PycharmProjects/PersonRecognitionSecurity/datasets/e88v3t_after_SAM1"    # ../dataset/inria/Train/pos/   ,   ../dataset/inria/Test/pos/
 # video or folder
 source_key                 = 1     # 1:inria     0:video
 

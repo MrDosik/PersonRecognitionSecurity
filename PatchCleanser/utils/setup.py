@@ -110,16 +110,11 @@ def get_data_loader(dataset_name,data_dir,model,batch_size=1,num_img=-1,train=Fa
 
 
     elif dataset_name == 'e88v3t_patched':
-
         config = resolve_data_config({}, model=model)
-
         ds_transforms = create_transform(**config)
 
-        # Fixing dataset path manually to avoid duplicate folder name
-
-        dataset_path = os.path.join(data_dir,"single_class")  # Corrected!
-
-        print(f"Loading dataset from: {dataset_path}")  # Debugging output
+        dataset_path = os.path.join(data_dir,"single_class")
+        print(f"Loading dataset from: {dataset_path}")  # debugging output
 
         if not os.path.isdir(dataset_path):
             raise ValueError(f"Dataset path does not exist or is not a directory: {dataset_path}")
